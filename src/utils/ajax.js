@@ -3,7 +3,7 @@ export const doAjax = (url, method = 'GET', data = null) => {
     method: method,
     headers: {
       'Content-Type': 'application/json',
-      // 'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': 'no-cors',
     },
     body: data,
   };
