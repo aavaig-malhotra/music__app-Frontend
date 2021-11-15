@@ -1,9 +1,10 @@
 export const doAjax = (url, method = 'GET', data = null) => {
   const options = {
     method: method,
+    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': 'no-cors',
+      // 'Access-Control-Allow-Origin': '*',
     },
     body: data,
   };
